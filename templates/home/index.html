@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME PAGES</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/home.css') }}">
+</head>
+<body>
+  
+  <h1>Hello World</h1>
+
+  {% for i in mydata %}
+    <h3>{{ i }}</h3>
+  {% endfor %}
+  
+</body>
+</html>
