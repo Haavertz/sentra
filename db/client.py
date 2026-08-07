@@ -2,7 +2,7 @@
 from typing import List
 
 class Database:
-    comments: List = []
+    comments: List[str] = []
 
 database = Database()
 
