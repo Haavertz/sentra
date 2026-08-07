@@ -9,11 +9,11 @@
 <body>
   
   <h1>Hello World</h1>
-  {% if comments|length == 0 %}
-    <h3>No comments available</h3>
+  {% if monitors|length == 0 %}
+    <h3>No monitors available</h3>
   {% else %}
-    {% for c in comments %}
-      <p>{{ c }}</p>
+    {% for m in monitors %}
+      <p>{{ m }}</p>
     {% endfor %}
   {% endif %}
   

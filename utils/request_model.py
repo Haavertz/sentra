@@ -1,7 +1,8 @@
 #!/usr/bin/env python3 
 """ Restructure these helper type methods in your own way if you want """
 
-from pydantic import BaseModel
+from pydantic import BaseModel, HttpUrl
 
-class CommentCreateData(BaseModel):
-    content: str
+class MonitorCreateData(BaseModel):
+    name: str
+    url: HttpUrl

@@ -1,8 +1,7 @@
 #!/usr/bin/env python3 
-from typing import List
-
 class Database:
-    comments: List[str] = []
+      def __init__(self):
+          self.monitors: list[dict] = []
 
 database = Database()
 

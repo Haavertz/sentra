@@ -12,6 +12,6 @@ def home_home(request: Request):
     session = get_session()
     context = {
         "request": request,
-        "comments": session.comments
+        "monitors": session.monitors
     }
     return templates.TemplateResponse(request, 'home/index.html', context) 
