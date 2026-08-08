@@ -1,7 +1,8 @@
 #!/usr/bin/env python3 
 class Database:
       def __init__(self):
-          self.monitors: list[dict] = []
+          self.monitors: dict[int, dict] = {}
+          self.next_monitor_id = 1
 
 database = Database()
 
