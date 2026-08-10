@@ -40,4 +40,4 @@ def delete_monitors(monitor_id: int, session: Database = Depends(get_session)):
     if monitor is None:
         raise HTTPException(status_code=404, detail="Item not Found ")
 
-    return list({"message" : "delete item", "code" : HTTPException(status_code=200, detail="Done")})
+    return { "message": "Monitor deleted", "monitor": monitor }

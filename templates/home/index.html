@@ -4,18 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOME PAGES</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/root.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', path='css/home.css') }}">
 </head>
 <body>
-  
-  <h1>Hello World</h1>
-  {% if monitors|length == 0 %}
-    <h3>No monitors available</h3>
-  {% else %}
-    {% for m in monitors %}
-      <p>{{ m }}</p>
-    {% endfor %}
-  {% endif %}
-  
+ 
+  <div class="container-content">
+    <div class="name-content options-content">
+      <h2>Monitores disponíveis</h2>
+    </div>
+
+    <section class="values-content-response">
+      {% if monitors|length == 0 %}
+        <p>Nenhum monitor cadastrado.</p>
+      {% else %}
+        {% for m in monitors %}
+          <div class="monitor">
+            <p>ID: {{ m.id }}</p>
+            <p>Nome: {{ m.name }}</p>
+            <p>URL: {{ m.url }}</p>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </section>
+  </div>
+
 </body>
 </html>

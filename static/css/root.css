@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  /* Main Colors  */
+  --color-primary:              #C97942;  
+  --color-secondary:            #8B5E3C;  
+  --color-tertiary:             #5E8B7E;  
+  --color-quaternary:           #E3A14B;  
+  --color-background:           #FFE4C4;  
+  --color-surface:              #FFF8F0;  
+  --color-border:               #E7C9A5;  
+  --color-text-primary:         #2F241C;  
+  --color-text-secondary:       #6E5A49;  
+  --color-text-disabled:        #B7A391;  
+  
+  /*Border Radius*/
+  --radius-small: 6px;
+  --radius-medium: 8px;
+  --radius-large: 12px;
+
+  /* Spacing */
+  --spacing-1: 2px;
+  --spacing-2: 4px;
+  --spacing-3: 8px;
+  --spacing-4: 12px;
+  --spacing-5: 16px;
+  --spacing-6: 20px;
+  --spacing-7: 24px;
+  --spacing-8: 28px;
+  --spacing-9: 32px;
+  --spacing-10: 40px;
+  --spacing-11: 48px;
+
+}
